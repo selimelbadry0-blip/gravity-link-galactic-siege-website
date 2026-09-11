@@ -25,7 +25,7 @@
         <div class="hero-content">
             <h1>Gravity Link: Galactic Siege</h1>
             <p>Master gravity, conquer the cosmos, and lead your fleet to victory!</p>
-            <a href="https://www.astrocade.com/games/gravity-link-galactic-siege/01M2565NRVNC5VEHSM8E3CGB97" class="cta-button" target="_blank">Play Now</a>
+            <a href="#play" class="cta-button">Play Now</a>
         </div>
         <div class="hero-background"></div>
     </section>
@@ -89,12 +89,39 @@
         </div>
     </section>
 
-    <!-- Call to Action -->
-    <section id="play" class="cta-section">
+    <!-- Game Section -->
+    <section id="play" class="game-section">
         <div class="container">
-            <h2>Ready to Conquer the Galaxy?</h2>
-            <p>Join millions of players in the ultimate space adventure</p>
-            <a href="https://www.astrocade.com/games/gravity-link-galactic-siege/01M2565NRVNC5VEHSM8E3CGB97" class="cta-button large" target="_blank">Start Playing Now</a>
+            <h2>Play Gravity Link: Galactic Siege</h2>
+            <div class="game-container">
+                <canvas id="gameCanvas" width="800" height="600"></canvas>
+                <div class="game-info">
+                    <h3>Game Instructions</h3>
+                    <p><strong>Objective:</strong> Collect all the stars and reach the next level!</p>
+                    <p><strong>Controls:</strong></p>
+                    <ul>
+                        <li>🔼 Arrow Keys or WASD - Move your ship</li>
+                        <li>🔼 SPACE - Activate Gravity Shield</li>
+                        <li>🔼 Click - Create Gravity Pull Point</li>
+                    </ul>
+                    <div class="game-stats">
+                        <p>Score: <span id="score">0</span></p>
+                        <p>Lives: <span id="lives">3</span></p>
+                        <p>Level: <span id="level">1</span></p>
+                    </div>
+                    <button id="startBtn" class="game-button">Start Game</button>
+                    <button id="pauseBtn" class="game-button" disabled>Pause Game</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Want More?</h2>
+            <p>Play the full version with more levels, features, and challenges!</p>
+            <a href="https://www.astrocade.com/games/gravity-link-galactic-siege/01M2565NRVNC5VEHSM8E3CGB97" class="cta-button large" target="_blank">Play Full Version on Astrocade</a>
         </div>
     </section>
 
@@ -105,5 +132,7 @@
             <p>Created with ❤️ for space adventure lovers</p>
         </div>
     </footer>
+
+    <script src="game.js"></script>
 </body>
 </html>
